@@ -84,10 +84,10 @@ I wrote a bash script that has a run function that can be used for every program
 
 i ran it on my system which has the following specs:
 
-Ryzen 5600x
-TridentZ 16GB DDR4-3200 CL16 Memory
-RTX 3080
-Samsung 970 Evo Plus M.2
+- Ryzen 5600x
+- TridentZ 16GB DDR4-3200 CL16 Memory
+- RTX 3080
+- Samsung 970 Evo Plus M.2
 
 from the tests in Task 1 i am not surprised about the mean and variance except in filegen the variance seems wrong and idk what the source could be i tried it a few times and some variances where measured at really high numbers
 
