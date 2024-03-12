@@ -1,0 +1,7 @@
+program, time_mean, time_variance, memory_mean, memory_variance
+./delannoy 14, 10044, 492, 544, 0
+./filegen 30 100 1024 1048576, 10087, 38, 1856, 0
+./filesearch, 3, 6, 728, 0
+./mmul, 70, 0, 24024, 0
+./nbody, 44, 0, 746, 4
+./qap /home/georg/poc/perf-oriented-dev/small_samples/qap/problems/chr15c.dat, 1029, 1, 634, 4
