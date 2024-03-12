@@ -7,7 +7,7 @@ It computes the number of paths from the southwest corner (0, 0) of a rectangula
 the parameter determines the size of our grid and it supprots a size up to 23 because larger would take too much time, it uses the recursive definition
 
 $$ D(m,n) = \begin{cases}
-1 \quad \text{if $m=0  \or\  n=0$}\\ 
+1 \quad \text{if $m=0$ or $n=0$}\\ 
 D(m-1,n) + D(m-1,n-1) + D(m, n-1) \quad \text{otherwise}
 \end{cases}
 $$
