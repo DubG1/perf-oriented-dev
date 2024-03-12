@@ -82,7 +82,7 @@ It is an implementation of the Quadratic Assignment Problem which is to assign a
 
 I wrote a bash script that has a run function that can be used for every program, for eahc program it executes its 5 times with the same parameters and saves the wall clock times and max memory usages for every execution in an array each, next we calculate mean and variance for both metrics and finally we write it to a csv
 
-i ran it on my system which has the following specs
+i ran it on my system which has the following specs:
 
 Ryzen 5600x
 TridentZ 16GB DDR4-3200 CL16 Memory
