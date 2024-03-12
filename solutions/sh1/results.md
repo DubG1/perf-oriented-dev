@@ -89,7 +89,7 @@ i ran it on my system which has the following specs:
 - RTX 3080
 - Samsung 970 Evo Plus M.2
 
-from the tests in Task 1 i am not surprised about the mean and variance except in filegen the variance seems wrong and idk what the source could be i tried it a few times and some variances where measured at really high numbers
+from the tests in Task 1 i am not surprised about the mean and variance except in filegen the variance seems wrong the source is possibly due my handling of float operations after talking to colleagues 
 
 
 | program                       | time_mean | time_var | memory_mean | memory_var |
