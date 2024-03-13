@@ -111,3 +111,8 @@ on the LCC3 i got similiar results to my local machine
 | ./mmul                        | 70        | 0        | 24024       | 0          |
 | ./nbody                       | 44        | 0        | 746         | 4          |
 | ./qap chr15c.dat              | 1029      | 1        | 634         | 4          |
+
+i noticed i changed some directory structure so the path to chr15c.dat was false and it didnt read the file on the LCC3 and on my pc so i reran it and tried to fix the calculations by using the bc library but i still got an unusual value for the variance and on the LCC3 i got some dividing by 0 errors
+
+
+

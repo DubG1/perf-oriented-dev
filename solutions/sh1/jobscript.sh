@@ -13,7 +13,6 @@
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
 
-
 run() {
     command="$1"
     output_file="$2"
@@ -23,7 +22,7 @@ run() {
     max_memory_usages=()
 
     # loop to run the command 5 times
-    for ((i=1; i<=3; i++)); do
+    for ((i=1; i<=5; i++)); do
 
         /usr/bin/time -v $command 2> temp_time_output.txt
 
@@ -51,17 +50,17 @@ run() {
         ((t_sum += time))
     done
 
-    mean_time=$((t_sum / ${#wall_clock_times[@]}))
+    mean_time=$(bc <<< "scale=2; $t_sum / ${#wall_clock_times[@]}")
 
     # variance time
     t_var_sum=0
     for time in "${wall_clock_times[@]}"; do
-        diff=$((time - mean_time))
-        sq_difference=$((diff * diff))
-        ((t_var_sum += sq_difference))
+        diff=$(echo "$time - $mean_time" | bc)
+        sq_difference=$(echo "$diff * $diff" | bc)
+        t_var_sum=$(echo "$t_var_sum + $sq_difference" | bc)
     done
 
-    var_time=$((t_var_sum / ${#wall_clock_times[@]}))
+    var_time=$(echo "scale=2; $t_var_sum / ${#wall_clock_times[@]}" | bc)
 
     # mean memory
     m_sum=0
@@ -69,17 +68,16 @@ run() {
         ((m_sum += memory))
     done
 
-    mean_memory=$((m_sum / ${#max_memory_usages[@]}))
-
+    mean_memory=$(bc <<< "scale=2; $m_sum / ${#max_memory_usages[@]}")
     # variance memory
     m_var_sum=0
     for memory in "${max_memory_usages[@]}"; do
-        diff=$((memory - mean_memory))
-        sq_difference=$((diff * diff))
-        ((m_var_sum += sq_difference))
+        diff=$(echo "$memory - $mean_memory" | bc)
+        sq_difference=$(echo "$diff * $diff" | bc)
+        m_var_sum=$(echo "$m_var_sum + $sq_difference" | bc)
     done
 
-    var_memory=$((m_var_sum / ${#max_memory_usages[@]}))
+    var_memory=$(echo "scale=2; $m_var_sum / ${#max_memory_usages[@]}" | bc)
 
     echo "$command, $mean_time, $var_time, $mean_memory, $var_memory" >> $output_file
 
@@ -102,4 +100,4 @@ run "./mmul" $output_csv
 
 run "./nbody" $output_csv
 
-run "./qap /home/georg/poc/perf-oriented-dev/small_samples/qap/problems/chr15c.dat" $output_csv
+run "./qap /home/cb76/cb761232/poc/sh1/build/chr15c.dat" $output_csv
