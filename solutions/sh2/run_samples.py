@@ -8,6 +8,10 @@ def run(command, output_file, raw_output):
     wall_clock_times = []
     max_memory_usages = []
 
+    #start load generator ./exec_with_workstation_heavy.sh
+
+    #replace for with a while thats dependent on confidence interval, add calculation for interval
+    #if while is done stop load generator again
     for i in range(5):
         full_command = f"/usr/bin/time -v {command}"
         time_output = subprocess.run(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
