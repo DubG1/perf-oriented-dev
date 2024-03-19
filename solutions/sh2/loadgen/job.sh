@@ -12,9 +12,12 @@
 #SBATCH --ntasks-per-node=1
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
+#SBATCH --chdir=/home/cb76/cb761232/perf-oriented-dev/solutions/sh2/loadgen/
 
 
-#Run the Python benchmark script
+#benchmark without loadgen
+#/usr/bin/python3 ./benchmark_heavy.py ./small_samples/build/mmul ./mmul2.csv ./mmul2_raw.csv
 
-/home/cb76/cb761232/perf-oriented-dev/solutions/sh2/loadgen/tools/load_generator/exec_with_workstation_heavy.sh & /usr/bin/python3 benchmark_heavy.py
+#benchmark with loadgen
+./tools/load_generator/exec_with_workstation_heavy.sh  "/usr/bin/python3 ./benchmark_heavy.py ./small_samples/build/mmul ./mmul.csv ./mmul_raw.csv"
 
