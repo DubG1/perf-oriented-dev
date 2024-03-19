@@ -1,2 +1,1 @@
 program, time_mean, time_variance, memory_mean, memory_variance
-./small_samples/build/mmul, 683.33, 33.33, 24024.00, 0.00
