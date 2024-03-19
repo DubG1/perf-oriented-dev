@@ -1,0 +1,2 @@
+program, time_mean, time_variance, memory_mean, memory_variance
+./filegen 10 50 1024 1048576, 1732.00, 3170.00, 1856.80, 11.20

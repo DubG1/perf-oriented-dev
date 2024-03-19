@@ -1,0 +1,8 @@
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/edit_cache.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/filegen.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/qap.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/rebuild_cache.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/nbody.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/filesearch.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/delannoy.dir
+/home/georg/poc/perf-oriented-dev/small_samples/build/CMakeFiles/mmul.dir
