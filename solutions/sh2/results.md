@@ -24,3 +24,6 @@ program|time_mean|time_variance|memory_mean|memory_variance
 ./small_samples/build/nbody|2580.00|0.00|1894.67|1925.33
 ./small_samples/build/qap chr15c.dat|276.67|33.33|1410.67|10325.33
 
+### Task 2
+
+I created a simple program that creates a file and writes random characters to a  file, it is possible to specify size of the write operation and operations per second, ive only briefly tried it out but couldnt measure any impact again like in task1, i did not benchmark it because i had spent so much time on task 1

@@ -34,17 +34,6 @@ void write_to_file(const char *path, int size, int operations) {
     fclose(file);
 }
 
-void create_files(const char *path, int amount) {
-    const char *name = "file_";
-    for (int i = 0; i < amount; i++) {
-        //create filename file_i
-        char filename[256];
-        snprintf(filename, sizeof(filename), "%s%d", name, i);
-        FILE *file = fopen(filename, "wb");
-        fclose(file);
-    }
-}
-
 int main() {
     srand((unsigned int)time(NULL));
 
@@ -58,7 +47,7 @@ int main() {
     while (1)
     {
         write_to_file(PATH, SIZE, OPERATIONS);
-        create_files("./created", 10);
+
     }
     return 0;
 }
