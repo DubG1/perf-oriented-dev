@@ -52,8 +52,8 @@ on the LCC3 i got some results
 
 npb_bt_a
 
-binvchrs consumes the most time because it is called often and is related to matmul_sub since they have an equal number of calls
-compute_rhs, y_solve, x_solve and z_solve seem to be more complex since they are called far less times but still consume a significant amout of time
+binvchrs consumes the most time because it is called often just like matmul_sub
+compute_rhs, y_solve, x_solve and z_solve seem to be more complex since they are called far less times but still consume a significant amout of time, they could be adjusted to improve the performance of our program 
 
 | Time (%) | Cumulative (seconds) | Self (seconds) | Calls     | ms/call | ms/call | Name              |
 |----------|----------------------|----------------|-----------|---------|---------|-------------------|
@@ -76,6 +76,8 @@ compute_rhs, y_solve, x_solve and z_solve seem to be more complex since they are
 | 0.00     | 83.54                | 0.00           | 1         | 0.00    | 0.00    | rhs_norm          |
 
 npb_bt_b
+
+comparing to npb_bt_b we can see almost the same percentages but the number of calls of compute_rhs and the solve functions is still the same but the time is longer which is interesting, all other functions are called way more often leading to a longer execution time
 
 | Time (%) | Cumulative (seconds) | Self (seconds) | Calls     | ms/call | ms/call | Name              |
 |----------|----------------------|----------------|-----------|---------|---------|-------------------|
