@@ -23,7 +23,7 @@ in this program there is a lot more going on with 24,5 mbytes of total heap cons
 
 ### Task 2
 
-the perf results are in a seperate file, the results show that 
+the perf results are in a seperate file, the execution time with perf is pretty much the same comparing to the results from above without perf, there are minimal differences but these could be due to different loads on the LCC3 because i did both tasks on different days
 
 - ssca2 has way higher L1 cache misses than npb_bt_a but LLC misses are the other way around with ssca2 having way lower misses than npb_bt_a
 - dTLB is pretty minimal with only ssca2 having 13.20% misses
