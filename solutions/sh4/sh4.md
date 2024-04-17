@@ -19,3 +19,17 @@ the time difference was a lot with npb_bt_a taking 10x as long and ssca2 about 3
 in this program there is a lot more going on with 24,5 mbytes of total heap consumption at one point, and the genScalData, computeGraph and betweennessCentrality functions taking up 4 mbytes each
 
 ![alt text](ssca2_sc.png)
+
+
+### Task 2
+
+the perf results are in a seperate file, the results show that 
+
+- ssca2 has way higher L1 cache misses than npb_bt_a but LLC misses are the other way around with ssca2 having way lower misses than npb_bt_a
+- dTLB is pretty minimal with only ssca2 having 13.20% misses
+- both have almost 0 L1 icache and iTLB misses
+
+|           | ssca2  | npb_bt_a |
+|-----------|--------|----------|
+| L1-dcache | 38.84% | 4.23%    |
+| LL-cache  | 10.44% | 49.69%   |
