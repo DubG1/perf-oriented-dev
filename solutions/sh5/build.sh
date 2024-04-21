@@ -7,7 +7,7 @@ cd ../../small_samples
 rm -rf build
 mkdir build
 cd build
-cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Os"
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Ofast"
 ninja
 
 cd "$original_path"
@@ -17,7 +17,7 @@ cd ../../larger_samples/npb_bt
 rm -rf build
 mkdir build
 cd build
-cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Os"
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Ofast"
 ninja
 
 cd "$original_path"
@@ -27,5 +27,5 @@ cd ../../larger_samples/ssca2
 rm -rf build
 mkdir build
 cd build
-cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Os"
+cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS="-Ofast"
 ninja
