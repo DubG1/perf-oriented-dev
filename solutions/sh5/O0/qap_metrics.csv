@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./qap ./problems/chr15c.dat, 282.00, 220.00

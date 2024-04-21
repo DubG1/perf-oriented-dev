@@ -1,0 +1,6 @@
+qap ./problems/chr15c.dat
+mmul
+delannoy 13
+npb_bt_w
+ssca2 15
+nbody
