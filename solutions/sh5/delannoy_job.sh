@@ -15,4 +15,4 @@
 
 cd ../../small_samples/build
 
-python3 benchmark.py ./build/delannoy 13
+python3 ../benchmark.py delannoy 13

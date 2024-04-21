@@ -15,4 +15,4 @@
 
 cd ../../larger_samples/npb_bt/build
 
-python3 benchmark.py ./build/npb_bt_w
+python3 ../benchmark.py npb_bt_w

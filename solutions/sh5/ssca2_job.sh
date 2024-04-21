@@ -15,4 +15,4 @@
 
 cd ../../larger_samples/ssca2/build
 
-python3 benchmark.py ./build/ssca2 15
+python3 ../benchmark.py ssca2 15
