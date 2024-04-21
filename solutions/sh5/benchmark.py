@@ -46,7 +46,7 @@ if __name__ == "__main__":
         sys.exit(1)
         
     name = sys.argv[1]
-    output_csv = name + "_metrics.csv"
+    output_csv = "../" + name + "_metrics.csv"
     raw_output_csv = name + "_raw.csv"
 
     #reset csv and add headers

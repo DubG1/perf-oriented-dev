@@ -15,4 +15,4 @@
 
 cd ../../small_samples/build
 
-python3 benchmark.py nbody
+python3 benchmark.py ./build/nbody
