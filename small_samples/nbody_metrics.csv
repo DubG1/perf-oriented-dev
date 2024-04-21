@@ -1,2 +1,2 @@
 program, time_mean, time_variance
-./ssca2 15, 4802.00, 2270.00
+./nbody, 10232.00, 920.00
