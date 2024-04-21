@@ -15,5 +15,5 @@
 
 cd ../../small_samples/build
 
-python3 benchmark.py qap /home/georg/perf-oriented-dev/small_samples/qap/problems/chr15c.dat
+python3 benchmark.py qap ./problems/chr15c.dat
 

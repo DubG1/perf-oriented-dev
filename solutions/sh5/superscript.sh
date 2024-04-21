@@ -1,8 +1,8 @@
 #!/bin/bash
 
-./delannoy_job.sh
-./mmul_job.sh
-./nbody_job.sh
-./npb_job.sh
-./qap_job.sh
-./ssca2_job.sh
+sbatch ./delannoy_job.sh
+sbatch ./mmul_job.sh
+sbatch ./nbody_job.sh
+sbatch ./npb_job.sh
+sbatch ./qap_job.sh
+sbatch ./ssca2_job.sh
