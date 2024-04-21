@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./delannoy 13, 3364.00, 30.00
