@@ -1,2 +1,2 @@
 program, time_mean, time_variance
-./qap /home/cb76/cb761232/perf-oriented-dev/small_samples/qap/problems/chr15c.dat, 3186.00, 230.00
+./qap /home/cb76/cb761232/perf-oriented-dev/small_samples/qap/problems/chr15c.dat, 3104.00, 80.00
