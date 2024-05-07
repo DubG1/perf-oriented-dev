@@ -46,8 +46,12 @@ if __name__ == "__main__":
         sys.exit(1)
         
     name = sys.argv[1]
-    output_csv = "../" + name + "_metrics.csv"
-    raw_output_csv = name + "_raw.csv"
+
+    cmd = " ".join(sys.argv[1:])
+    print(cmd)
+
+    output_csv = cmd + "_metrics.csv"
+    raw_output_csv = cmd + "_raw.csv"
 
     #reset csv and add headers
     open(output_csv, 'w').close()
@@ -57,6 +61,4 @@ if __name__ == "__main__":
         f.write("program, time_mean, time_variance\n")
     
     #run command and write results
-    cmd = " ".join(sys.argv[1:])
-    print(cmd)
     run("./" + cmd, output_csv, raw_output_csv)
