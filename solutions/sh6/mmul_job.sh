@@ -13,4 +13,4 @@
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
 
-python3 benchmark.py mmul
+./mmul

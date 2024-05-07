@@ -8,7 +8,7 @@ def run(command, output_file, raw_output):
     #store immediate results
     wall_clock_times = []
 
-    for i in range(10):
+    for i in range(5):
         full_command = f"/usr/bin/time -v {command}"
         time_output = subprocess.run(full_command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 

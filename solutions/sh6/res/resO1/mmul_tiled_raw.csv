@@ -1,0 +1,5 @@
+./mmul_tiled 32, 194560.0
+./mmul_tiled 32, 189220.0
+./mmul_tiled 32, 193340.0
+./mmul_tiled 32, 191260.0
+./mmul_tiled 32, 193630.0
