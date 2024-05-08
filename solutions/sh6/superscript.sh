@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sbatch ./mmul_job.sh
 sbatch ./scripts/tiled32.sh
 sbatch ./scripts/tiled64.sh
 sbatch ./scripts/tiled128.sh

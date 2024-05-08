@@ -1,0 +1,3 @@
+./mmul_tiled_O3 128, 69870.0
+./mmul_tiled_O3 128, 69790.0
+./mmul_tiled_O3 128, 70130.0

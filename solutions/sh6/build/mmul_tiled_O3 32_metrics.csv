@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./mmul_tiled_O3 32, 70320.00, 11200.00
