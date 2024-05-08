@@ -67,21 +67,27 @@ int main(int argc, char *argv[])
 	}
 
 	// conduct multiplication
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < K; j++)
-		{
-			TYPE sum = 0;
-			for (int kk = 0; kk < M; kk += block_size)
-			{
-				for (int k = kk; k < MIN(M, kk + block_size); k++)
-				{
-					sum += A[i][k] * B[k][j];
-				}
-			}
-			C[i][j] = sum;
-		}
-	}
+for (int ii = 0; ii < N; ii += block_size)
+{
+    for (int jj = 0; jj < K; jj += block_size)
+    {
+        for (int i = ii; i < MIN(N, ii + block_size); i++)
+        {
+            for (int j = jj; j < MIN(K, jj + block_size); j++)
+            {
+                TYPE sum = 0;
+                for (int kk = 0; kk < M; kk += block_size)
+                {
+                    for (int k = kk; k < MIN(M, kk + block_size); k++)
+                    {
+                        sum += A[i][k] * B[k][j];
+                    }
+                }
+                C[i][j] = sum;
+            }
+        }
+    }
+}
 
 	// verify result
 	int success = 1;
