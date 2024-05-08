@@ -1,3 +1,1 @@
-Verification: OK
-mmul
-mmul_tiled 32
+slurmstepd-n001: error: *** JOB 94385 ON n001 CANCELLED AT 2024-05-08T02:13:29 ***
