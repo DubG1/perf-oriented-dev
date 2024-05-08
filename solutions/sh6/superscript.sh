@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sbatch ./mmul_tiled_job.sh
+sbatch ./tiled.sh
 sbatch ./mmul_job.sh
 

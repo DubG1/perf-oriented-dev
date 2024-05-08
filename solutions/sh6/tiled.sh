@@ -13,9 +13,11 @@
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
 
-python3 benchmark.py mmul_tiled 32
-python3 benchmark.py mmul_tiled 64
-python3 benchmark.py mmul_tiled 128
-python3 benchmark.py mmul_tiled 256
-python3 benchmark.py mmul_tiled 512
-python3 benchmark.py mmul_tiled 1024
+cd ./build
+
+python3 benchmark.py mmul_tiled_O0 32
+python3 benchmark.py mmul_tiled_O0 64
+python3 benchmark.py mmul_tiled_O0 128
+python3 benchmark.py mmul_tiled_O0 256
+python3 benchmark.py mmul_tiled_O0 512
+python3 benchmark.py mmul_tiled_O0 1024
