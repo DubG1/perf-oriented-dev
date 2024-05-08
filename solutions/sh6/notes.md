@@ -28,5 +28,14 @@ for (int ii = 0; ii < N; ii += block_size)
 
 we need a MIN in the loops that have M,N,K so we dont get out of the bounds of the matrix if it doesnt match the tile size perfectly
 
-my results are
+but still i dont not get any significant improvements/differences between tiling so i must have made a mistake somewhere
 
+![alt text](diagram.png)
+
+### Task 2
+
+- get cache sizes for specific cpu
+- allocate memory blocks with progressively larger sizes with atleast one fitting in each cache, clear cache for unbiased results
+- access memory blocks multiple times sequentially
+- measure access time for each block with appropiate time measurement
+- results should show that at some point the block size exceedes the L1 cache so it gets put in the next cache etc
