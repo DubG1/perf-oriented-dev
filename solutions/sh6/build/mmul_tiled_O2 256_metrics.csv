@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./mmul_tiled_O2 256, 72276.67, 133233.33

@@ -1,0 +1,3 @@
+./mmul_tiled_O2 512, 72870.0
+./mmul_tiled_O2 512, 72980.0
+./mmul_tiled_O2 512, 72400.0

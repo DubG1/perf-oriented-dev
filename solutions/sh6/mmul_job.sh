@@ -15,4 +15,4 @@
 
 cd ./build
 
-python3 benchmark.py mmul_O3
+python3 benchmark.py mmul_O1

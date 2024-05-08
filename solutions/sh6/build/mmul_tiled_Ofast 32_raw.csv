@@ -1,0 +1,3 @@
+./mmul_tiled_Ofast 32, 73380.0
+./mmul_tiled_Ofast 32, 72730.0
+./mmul_tiled_Ofast 32, 73110.0

@@ -15,4 +15,4 @@
 
 cd ./build
 
-python3 benchmark.py mmul_tiled_O3 128
+python3 benchmark.py mmul_tiled_O0 128

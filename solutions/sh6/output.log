@@ -1,7 +1,1 @@
-mmul_tiled_O3 64
-mmul_tiled_O3 1024
-mmul_tiled_O3 256
-mmul_O3
-mmul_tiled_O3 512
-mmul_tiled_O3 128
-mmul_tiled_O3 32
+mmul_O1

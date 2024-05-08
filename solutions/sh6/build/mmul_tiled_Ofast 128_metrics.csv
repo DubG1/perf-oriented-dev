@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./mmul_tiled_Ofast 128, 73026.67, 53733.33

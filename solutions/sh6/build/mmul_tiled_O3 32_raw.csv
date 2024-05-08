@@ -1,0 +1,3 @@
+./mmul_tiled_O3 32, 68090.0
+./mmul_tiled_O3 32, 70920.0
+./mmul_tiled_O3 32, 70760.0

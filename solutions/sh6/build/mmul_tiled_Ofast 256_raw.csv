@@ -1,0 +1,3 @@
+./mmul_tiled_Ofast 256, 74370.0
+./mmul_tiled_Ofast 256, 72260.0
+./mmul_tiled_Ofast 256, 74460.0

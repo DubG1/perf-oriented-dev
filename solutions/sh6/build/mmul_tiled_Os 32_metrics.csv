@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./mmul_tiled_Os 32, 77640.00, 142900.00

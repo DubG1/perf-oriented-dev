@@ -1,0 +1,2 @@
+program, time_mean, time_variance
+./mmul_tiled_O1 1024, 71273.33, 926033.33

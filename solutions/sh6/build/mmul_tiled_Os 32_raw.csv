@@ -1,0 +1,3 @@
+./mmul_tiled_Os 32, 77920.0
+./mmul_tiled_Os 32, 77790.0
+./mmul_tiled_Os 32, 77210.0
