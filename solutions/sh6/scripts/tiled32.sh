@@ -13,6 +13,6 @@
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
 
-cd ../build
+cd ./build
 
 python3 benchmark.py mmul_tiled_O0 32
