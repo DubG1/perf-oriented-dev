@@ -1,7 +1,6 @@
-/var/spool/slurm/slurmd/job94386/slurm_script: line 16: cd: ../build: No such file or directory
-python3: can't open file 'benchmark.py': [Errno 2] No such file or directory
-slurmstepd-n002: error: *** JOB 94387 ON n002 CANCELLED AT 2024-05-08T02:23:48 ***
-slurmstepd-n003: error: *** JOB 94388 ON n003 CANCELLED AT 2024-05-08T02:23:50 ***
-slurmstepd-n004: error: *** JOB 94389 ON n004 CANCELLED AT 2024-05-08T02:23:52 ***
-slurmstepd-n005: error: *** JOB 94390 ON n005 CANCELLED AT 2024-05-08T02:23:56 ***
-slurmstepd-n006: error: *** JOB 94391 ON n006 CANCELLED AT 2024-05-08T02:23:58 ***
+mmul_tiled_O0 1024
+mmul_tiled_O0 128
+mmul_tiled_O0 512
+mmul_tiled_O0 256
+mmul_tiled_O0 64
+mmul_tiled_O0 32
