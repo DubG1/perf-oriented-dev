@@ -11,4 +11,7 @@ I built the custom allocators and then built the allscale_api project with ```/u
 | Wall time (s)    | 103           | 99       | 105      |
 | Peak Memory (kb) | 586636        | 586424   | 585992   |
 
+![alt text](image.png)
+![alt text](image-1.png)
+
 ### Task 2
