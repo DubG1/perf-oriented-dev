@@ -35,30 +35,30 @@ The tiered list was implemented using a tier-zero array, which is a collection o
 The provided graphs show the performance of two data structures, the tiered list and the unrolled linked list, across various metrics. Here's a detailed comparison for each graphic:
 
 1. **Element Size vs Operations Completed:**
-   ![Element Size vs Operations Completed](images/element_size_vs_operations_completed.png)
+   ![Element Size vs Operations Completed](10/images/element_size_vs_operations_completed.png)
 
    - The tiered list performs consistently well across different element sizes, maintaining a high number of operations completed. The performance slightly decreases as the element size increases, but remains robust overall.
    - The unrolled linked list shows a more significant decrease in performance as element size increases. It starts with fewer operations completed than the tiered list and the gap widens with larger element sizes.
 
 2. **Insert/Delete Ratio vs Operations Completed:**
-   ![Insert/Delete Ratio vs Operations Completed](images/ins_del_ratio_vs_operations_completed.png)
+   ![Insert/Delete Ratio vs Operations Completed](10/images/ins_del_ratio_vs_operations_completed.png)
 
    - The tiered list starts with a high number of operations completed and shows a decreasing trend as the insert/delete ratio increases. The difference is quite large at lower ratios.
    - The unrolled linked list maintains a relatively constant number of operations completed across different insert/delete ratios, with a slight increase as the ratio becomes more write-heavy.
 
 3. **Read/Write Ratio vs Operations Completed:**
-   ![Read/Write Ratio vs Operations Completed](images/read_write_ratio_vs_operations_completed.png)
+   ![Read/Write Ratio vs Operations Completed](10/images/read_write_ratio_vs_operations_completed.png)
 
    - The tiered list shows a steady increase in operations completed as the read/write ratio becomes more read-heavy. The performance improves significantly at higher read/write ratios.
    - The unrolled linked list has a fairly constant performance with slight variation, not showing significant improvement or decline with varying read/write ratios.
 
 4. **Total Operations Completed by Data Structure:**
    Note: 1e10 on y-axis meaning billion operations.
-   ![Total Operations Completed by Data Structure](images/total_operations_by_data_structure.png)
+   ![Total Operations Completed by Data Structure](10/images/total_operations_by_data_structure.png)
    - The tiered list completes a significantly higher total number of operations compared to the unrolled linked list.
    - The unrolled linked list completes fewer total operations overall.
 5. **Number of chunks**
-   ![Number of chunks](images/numbers_of_chunks_vs_operations_completed.png)
+   ![Number of chunks](10/images/numbers_of_chunks_vs_operations_completed.png)
 
 - The tiered list is more or less constant in the number of operations completed as the number of chunks increases.
 - The unrolled linked list shows a slight decrease towards 10 chunks and afterwards a strong decrease in operations completed.
