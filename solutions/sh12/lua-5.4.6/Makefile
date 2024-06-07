@@ -18,6 +18,9 @@ INSTALL_MAN= $(INSTALL_TOP)/man/man1
 INSTALL_LMOD= $(INSTALL_TOP)/share/lua/$V
 INSTALL_CMOD= $(INSTALL_TOP)/lib/lua/$V
 
+CFLAGS= -pg
+LDFLAGS= -pg
+
 # How to install. If your install program does not support "-p", then
 # you may have to run ranlib on the installed liblua.a.
 INSTALL= install -p
@@ -52,7 +55,7 @@ R= $V.6
 all:	$(PLAT)
 
 $(PLATS) help test clean:
-	@cd src && $(MAKE) $@
+	@cd src && $(MAKE) $@ MYCFLAGS="$(CFLAGS)" MYLDFLAGS="$(LDFLAGS)"
 
 install: dummy
 	cd src && $(MKDIR) $(INSTALL_BIN) $(INSTALL_INC) $(INSTALL_LIB) $(INSTALL_MAN) $(INSTALL_LMOD) $(INSTALL_CMOD)
