@@ -13,4 +13,4 @@
 # Enforce exclusive node allocation, do not share with other jobs
 #SBATCH --exclusive
 
-./lua ../../benchmark/fib.lua
+perf record -g ./lua ../../benchmark/fib.lua

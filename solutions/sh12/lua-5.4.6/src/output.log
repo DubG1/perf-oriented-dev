@@ -1,3 +1,5 @@
-100 x fibonacci_naive(30)     time:  19.4206 s  --  832040
-10000000 x fibonacci_tail(30) time:  17.4866 s  --  832040
-25000000 x fibonacci_iter(30) time:  12.1310 s  --  832040
+100 x fibonacci_naive(30)     time:  13.2455 s  --  832040
+10000000 x fibonacci_tail(30) time:  13.0714 s  --  832040
+25000000 x fibonacci_iter(30) time:  11.2112 s  --  832040
+[ perf record: Woken up 108 times to write data ]
+[ perf record: Captured and wrote 27.032 MB perf.data (150651 samples) ]
