@@ -8,4 +8,4 @@ I ran the benchmark 5 times on the LCC3 and got the following results for avg ti
 
 i used gprof and compiled it with the -pg flag, the most time was spent in ````luaV_execute```` with 80.37% of the total time which is the main interpreter loop, the profiling results indicate the specific functions that consume the most time, but further analysis is needed to understand why these functions are costly and how they can be optimized
 
-perf/valgrind ...
+i analyzed it with perf and generated a callgraph but i could not really read more into how it works
