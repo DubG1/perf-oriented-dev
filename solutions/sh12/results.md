@@ -1,6 +1,12 @@
 ### Task1
 
-I ran the benchmark 5 times on the LCC3 and got the following results for avg time, as expected naive is the slowest, tail recursion is a bit faster and iterative is the fastes with 14.739s on average
+I ran the benchmark 5 times on the LCC3 and got the following results for avg time, as expected naive is the slowest, tail recursion is a bit faster and iterative is the fastes with 10.945s on average
+
+| fib   | time    |
+|-------|---------|
+| naive | 12.732s |
+| tail  | 12.626s |
+| iter  | 10.945s |
 
 ![fib_benchmark](fib_base.png)
 
